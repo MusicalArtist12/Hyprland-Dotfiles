@@ -1,0 +1,123 @@
+@import "macchiato.css";
+
+
+* {
+    /* `otf-font-awesome` is required to be installed for icons */
+    font-family: JetBrainsMonoNerdFont, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+}
+
+window#waybar {
+    background-color: transparent;
+    color: @text;
+}
+
+
+window#waybar.empty {
+    background-color: transparent;
+}
+
+widget > label, #tray, button {
+    border-style: solid;
+    border-color: transparent;
+    
+    border-width: 0px;
+    padding: 5px 20px;
+    
+    margin: 0px;
+    margin-left: 5px;
+    margin-right: 5px;
+    
+    border-radius: 20px;
+    background-color: @base;
+}
+
+.modules-left, .modules-center, .modules-right {
+	margin-top: 10px;
+	margin-bottom: 0px;
+	margin-left: 15px;
+	margin-right: 15px;
+}
+
+#workspaces button.active, #workspaces button:hover {
+    background-color: @mauve;
+    color: @base;
+}
+
+#temperature, 
+#cpu, 
+#memory, 
+#network,
+#battery,
+#idle_inhibitor.activated,
+#clock,
+#pulseaudio:not(.muted),
+#backlight,
+#tray {
+    padding: 3px 18px;
+    border-width: 2px;
+
+    border-color: @teal;
+    color: @teal;
+}
+
+#battery.good {
+    border-color: @green;
+    color: @green;
+}
+
+#battery.warning:not(.charging), #temperature.critical {
+    border-color: @yellow;
+    color: @yellow;
+}
+
+#battery.critical {
+    border-color: @red;
+    color: @red;
+}
+
+@keyframes battery {
+    from {
+        background-color: @base;
+        color: @red;
+    }
+    to {
+        background-color: @red;
+        color: @base;
+    }
+}
+
+#battery.critical:not(.charging) {
+    animation-name: battery;
+    animation-duration: 1.0s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+#idle_inhibitor.activated {
+    border-color: @red;
+    color: @red;  
+}
+
+#clock {
+    border-color: @mauve;
+    color: @mauve;   
+}
+
+#network.disabled, #network.disconnected {
+    color: @text;
+
+    border-width: 0px;
+    padding: 5px 20px;
+}
+
+#pulseaudio:not(.muted) {
+    border-color: @green;
+    color: @green;    
+}
+
+#backlight, #tray {
+    border-color: @mauve;
+    color: @mauve;      
+}
