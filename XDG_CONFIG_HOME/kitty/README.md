@@ -1,0 +1,1 @@
+current-theme.conf is set by a yin-yang script.

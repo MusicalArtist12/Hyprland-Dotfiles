@@ -1,0 +1,63 @@
+configuration {
+    combi-modi: "drun,window";
+    combi-display-format: "{mode}&#09;{text}";
+    drun-display-format: "&#09;{name}";
+    window-format: "{w}&#09;{t}";
+    modes: "combi,window,drun,clipboard:~/.config/rofi/scripts/clipboard.sh,google:~/.config/rofi/scripts/search.sh,emoji:rofimoji";
+}
+
+@theme "theme"
+
+* {
+    background-color: transparent;
+    text-color: @text;
+    border-radius: 20px;
+    font: "jetbrains mono 12";
+}
+
+window {
+    background-color: @mantle;
+    border: 2px;
+    border-color: @mauve;
+}
+
+inputbar {
+    background-color: @surface0;
+    margin: 5px;
+    padding: 5px;
+}
+
+entry {
+    padding: 0px 0px 0px 5px;
+}
+
+listview {
+    margin: 0px 5px 5px 5px;
+    lines: 10;
+}
+
+element {
+    padding: 5px;
+    margin: 5px;
+    children: [  element-icon, element-text ];
+    background-color: @base;
+}
+
+element-icon {
+    size: 1.5em;
+}
+
+element-text {
+    vertical-align: 0.5;
+    padding: 0px 0px 0px 5px;
+}
+
+element selected {
+    background-color: @mauve;
+    text-color: @base;
+}
+
+element-text selected {
+    vertical-align: 0.5;
+    text-color: @base;
+}

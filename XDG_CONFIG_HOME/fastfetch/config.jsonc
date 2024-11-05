@@ -1,0 +1,122 @@
+{
+    "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+    "general": {
+        "multithreading": true,
+        "playerName": "Spotify"
+    },
+    "display": {
+        "separator": "",
+        "color": {
+            "keys": "green",
+            "title": "green"
+        },
+        "disableLinewrap": true
+    },
+    
+    "logo": {
+        "color": {
+            "1": "green",
+            "2": "green"
+        }
+    },
+    
+    /* "logo": "~/.config/fastfetch/fox.ascii", */
+    "modules": [
+        {
+            "type": "title",
+            "key": " ",
+            "format": ""
+        },
+        {
+            "key": "╭ OS ",
+            "type": "os",
+            "keyColor": "red"
+            
+        },
+        {
+            "key": "├─   ",
+            "type": "kernel",
+            "keyColor": "red"
+        },
+        {
+            "key": "├─   ",
+            "type": "packages",
+            "keyColor": "red"
+        },
+        {
+            "key": "╰─   ",
+            "type": "shell",
+            "keyColor": "red"
+        },       
+        {
+            "key": "╭ System ",
+            "type": "host",
+            "keyColor": "cyan"
+        },
+        {
+            "key": "├─ 󰻠  ",
+            "type": "cpu",
+            "keyColor": "cyan"
+        },
+        {
+            "key": "├─ 󰍛  ",
+            "type": "gpu",
+            "keyColor": "cyan"
+        },
+        {
+            "key": "╰─ 󰍹  ",
+            "type": "display",
+            "keyColor": "cyan"
+        },
+        {
+            "key": "╭ Stats ",
+            "type": "custom",
+            "keyColor": "blue"
+        },
+        {
+            "key": "├─   ",
+            "type": "uptime",
+            "keyColor": "blue"
+        },
+        {
+            "type": "battery",
+            "key": "├─ 󰁹  ",
+            "percent": {
+                "green": 50,
+                "yellow": 10
+            },
+            "keyColor": "blue"
+        },
+        {
+            "key": "├─   ",
+            "type": "cpuusage",
+            "separate": true,
+            "percent": {
+                "green": 50,
+                "yellow": 80
+            },
+            "keyColor": "blue"
+        },
+        {
+            "key": "├─   ",
+            "type": "disk",
+            "keyColor": "blue"
+        },
+        {
+            "key": "├─   ",
+            "type": "memory",
+            "keyColor": "blue"
+        },
+        {
+            "key": "╰─   ",
+            "type": "swap",
+            "keyColor": "blue"
+        },
+        "break",
+        {
+            "type": "colors",
+            "symbol": "block"
+        }
+
+    ]
+}

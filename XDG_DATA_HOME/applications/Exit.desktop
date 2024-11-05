@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Exit Hyprland
+Comment=hyprctl dispatch exit
+Exec=hyprctl dispatch exit
+Icon=
+Type=Application
+Categories=System
+Path=/home/julia/.local/bin/

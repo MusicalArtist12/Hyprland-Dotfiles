@@ -1,0 +1,2 @@
+#!/usr/bin/env sh
+Hyprland -c /etc/nwg-hello/hyprland.conf > /dev/null

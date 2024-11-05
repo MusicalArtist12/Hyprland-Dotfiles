@@ -1,0 +1,145 @@
+@import "theme.css";
+
+
+* {
+    /* `otf-font-awesome` is required to be installed for icons */
+    font-family: JetBrainsMonoNerdFont, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+}
+
+window#waybar {
+    background-color: transparent;
+    color: @text;
+}
+
+
+window#waybar.empty {
+    background-color: transparent;
+}
+
+widget > label, #tray, button {
+    border-style: solid;
+    border-color: transparent;
+    
+    border-width: 0px;
+    padding: 0px 20px;
+    
+    margin: 0px;
+    margin-left: 5px;
+    margin-right: 5px;
+    
+    border-radius: 15px;
+    background-color: @mantle;
+}
+
+.modules-left, .modules-center, .modules-right {
+	margin-top: 10px;
+	margin-bottom: 0px;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+#workspaces button {
+    color: @text;
+}
+
+#workspaces button.active, #workspaces button:hover {
+    background-color: @mauve;
+    color: @mantle;
+}
+
+#temperature, 
+#cpu, 
+#memory, 
+#network,
+#battery,
+#clock,
+#custom-idle-inhibitor.enabled,
+#pulseaudio,
+#backlight,
+#tray {
+    padding: 0px 18px;
+    border-width: 2px;
+
+    border-color: @teal;
+    color: @teal;
+}
+
+#battery.good {
+    border-color: @green;
+    color: @green;
+}
+
+#battery.warning:not(.charging), #temperature.critical {
+    border-color: @yellow;
+    color: @yellow;
+}
+
+#battery.critical {
+    border-color: @red;
+    color: @red;
+}
+
+@keyframes battery {
+    from {
+        background-color: @mantle;
+        color: @red;
+    }
+    to {
+        background-color: @red;
+        color: @mantle;
+    }
+}
+
+#battery.critical:not(.charging) {
+    animation-name: battery;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+#custom-idle-inhibitor.enabled {
+    border-color: @red;
+    color: @red;  
+}
+
+#clock {
+    border-color: @mauve;
+    color: @mauve;   
+}
+
+#network.disabled, #network.disconnected {
+    color: @text;
+
+    border-width: 0px;
+    padding: 0px 20px;
+}
+
+#pulseaudio:not(.muted) {
+    border-color: @green;
+    color: @green;    
+}
+
+#pulseaudio.muted {
+    border-color: @red;
+    color: @red;    
+}
+
+
+#backlight, #tray {
+    border-color: @mauve;
+    color: @mauve;      
+}
+
+#custom-squeekboard, #custom-squeekboard.disabled {
+    border-width: 2px;
+    border-color: @mantle;
+
+}
+
+#custom-squeekboard.enabled {
+    border-width: 2px;
+    border-color: @green;
+    color: @green
+}

@@ -1,0 +1,1 @@
+`XDG_DATA_HOME` defaults to `~/.local/share/`

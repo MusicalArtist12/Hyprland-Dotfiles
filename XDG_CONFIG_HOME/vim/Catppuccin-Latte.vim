@@ -1,0 +1,3 @@
+colorscheme catppuccin_latte
+
+

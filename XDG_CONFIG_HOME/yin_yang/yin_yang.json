@@ -1,0 +1,84 @@
+{
+    "version": 3.3,
+    "running": false,
+    "dark_mode": true,
+    "mode": "manual",
+    "coordinates": [
+        0.0,
+        0.0
+    ],
+    "update_location": false,
+    "update_interval": 60,
+    "times": [
+        "07:00",
+        "20:00"
+    ],
+    "boot_offset": 10,
+    "plugins": {
+        "system": {
+            "enabled": false,
+            "light_theme": "",
+            "dark_theme": ""
+        },
+        "colors": {
+            "enabled": false,
+            "light_theme": "",
+            "dark_theme": ""
+        },
+        "gtk": {
+            "enabled": false,
+            "light_theme": "catppuccin-latte-lavender-standard+default",
+            "dark_theme": "catppuccin-mocha-mauve-standard+default"
+        },
+        "icons": {
+            "enabled": false,
+            "light_theme": "",
+            "dark_theme": ""
+        },
+        "kvantum": {
+            "enabled": true,
+            "light_theme": "Catppuccin-Latte-Lavender",
+            "dark_theme": "catppuccin-mocha-mauve"
+        },
+        "wallpaper": {
+            "enabled": false,
+            "light_theme": "",
+            "dark_theme": ""
+        },
+        "firefox": {
+            "enabled": false,
+            "light_theme": "default-theme@mozilla.org",
+            "dark_theme": "firefox-compact-dark@mozilla.org"
+        },
+        "vs code": {
+            "enabled": true,
+            "light_theme": "Catppuccin Latte",
+            "dark_theme": "Catppuccin Mocha"
+        },
+        "onlyoffice": {
+            "enabled": false,
+            "light_theme": "theme-light",
+            "dark_theme": "theme-dark"
+        },
+        "okular": {
+            "enabled": false,
+            "light_theme": "",
+            "dark_theme": "InvertLightness"
+        },
+        "konsole": {
+            "enabled": false,
+            "light_theme": "BlackOnWhite",
+            "dark_theme": "Breeze"
+        },
+        "custom": {
+            "enabled": true,
+            "light_theme": "~/.local/bin/light_mode.sh",
+            "dark_theme": "~/.local/bin/dark_mode.sh"
+        },
+        "notification": {
+            "enabled": false,
+            "light_theme": "Day",
+            "dark_theme": "Night"
+        }
+    }
+}

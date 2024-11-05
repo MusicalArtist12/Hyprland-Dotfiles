@@ -1,0 +1,1 @@
+theme.rasi is set by a yin-yang script.

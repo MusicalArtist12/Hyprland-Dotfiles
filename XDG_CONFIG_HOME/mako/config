@@ -1,0 +1,79 @@
+background-color=#1e1e2e
+text-color=#cdd6f4
+border-color=#cba6f7
+border-radius=20
+border-size=2
+font=Jetbrains Mono 12
+width=500
+height=200
+layer=overlay
+max-history=5
+default-timeout=2000
+
+[urgency=high]
+border-color=#fab387
+
+[urgency=low]
+default-timeout=2000
+border-color=#1e1e2e
+
+[app-name=Spotify]
+anchor=top-center
+ignore-timeout=1
+default-timeout=2000
+border-color=#a6e3a1
+group-by=app-name
+width=600
+height=200
+
+[app-name=volume-notify]
+anchor=bottom-center
+ignore-timeout=1
+default-timeout=1000
+border-color=#a6e3a1
+width=200
+height=200
+group-by=app-name
+outer-margin=0, 0, 200, 0
+font=Jetbrains Mono 16
+text-alignment=center
+progress-color=source #a6e3a1
+text-color=#1e1e2e
+background-color=#11111b
+
+[app-name=volume-notify urgency=high]
+progress-color=source #f38ba8
+border-color=#f38ba8
+
+[app-name=volume-notify urgency=low]
+text-color=#a6e3a1
+
+[app-name=brightness-notify]
+anchor=bottom-center
+ignore-timeout=1
+default-timeout=1000
+border-color=#f9e2af
+width=200
+height=200
+group-by=app-name
+outer-margin=0, 0, 200, 0
+font=Jetbrains Mono 16
+text-alignment=center
+progress-color=source #f9e2af
+text-color=#1e1e2e
+background-color=#11111b
+
+[app-name=brightness-notify urgency=low]
+text-color=#f9e2af
+
+[app-name=battery-notify urgency=high]
+anchor=bottom-center
+text-color=#1e1e2e
+border-color=#f38ba8
+background-color=#f38ba8
+font=Jetbrains Mono 64
+width=400
+text-alignment=center
+height=400
+ignore-timeout=1
+default-timeout=1200

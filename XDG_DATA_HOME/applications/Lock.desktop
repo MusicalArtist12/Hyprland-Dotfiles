@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Lock
+Comment=
+Exec=loginctl lock-session
+Icon=
+Type=Application
+Categories=System
+Path=/usr/bin

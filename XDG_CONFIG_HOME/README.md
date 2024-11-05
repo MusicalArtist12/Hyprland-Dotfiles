@@ -1,0 +1,1 @@
+`XDG_CONFIG_HOME` defaults to ~/.config/
