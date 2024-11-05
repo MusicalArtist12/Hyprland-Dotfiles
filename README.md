@@ -41,7 +41,9 @@ make sure `$HOME/.local/bin` is in `$PATH`.
 - wl-clipboard
 - xdg-desktop-portal-hyprland
 - yin-yang
-- Zsh
+- Zsh, oh-my-zsh 
+    - zsh-autosuggestions
+    - zsh-syntax-highlighting
 
 # Recomendations
 - nwg-displays
@@ -49,3 +51,17 @@ make sure `$HOME/.local/bin` is in `$PATH`.
 - Cava
 
 # Screenshots
+
+![](/Screenshots/screenshot1.png)
+![](/Screenshots/screenshot2.png)
+![](/Screenshots/screenshot3.png)
+![](/Screenshots/screenshot4.png)
+![](/Screenshots/screenshot5.png)
+![](/Screenshots/screenshot6.png)
+
+![](/Screenshots/screenshot1-light.png)
+![](/Screenshots/screenshot2-light.png)
+![](/Screenshots/screenshot3-light.png)
+![](/Screenshots/screenshot4-light.png)
+![](/Screenshots/screenshot5-light.png)
+![](/Screenshots/screenshot6-light.png)
