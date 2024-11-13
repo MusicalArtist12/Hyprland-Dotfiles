@@ -33,6 +33,8 @@ make sure `$HOME/.local/bin` is in `$PATH`.
 - nwg-look
 - Pokemon-Colorscripts
 - Polkit-gnome
+- pamixer
+- pavucontrol
 - python
 - Ranger
 - rofi
