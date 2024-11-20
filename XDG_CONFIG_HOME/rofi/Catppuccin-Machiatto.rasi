@@ -26,5 +26,5 @@
   mantle: #1e2030;
   crust: #181926;
 
-  accent: mauve;
+  accent: @mauve;
 }

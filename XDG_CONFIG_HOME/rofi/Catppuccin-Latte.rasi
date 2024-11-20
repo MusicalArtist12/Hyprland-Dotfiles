@@ -26,5 +26,5 @@
     blue: #1e66f5;
     lavender: #7287fd;
 
-    accent: lavender;
+    accent: @lavender;
 }
