@@ -44,7 +44,7 @@ widget > label, #tray, button {
 }
 
 #workspaces button.active, #workspaces button:hover {
-    background-color: @mauve;
+    background-color: @accent;
     color: @mantle;
 }
 
@@ -105,8 +105,8 @@ widget > label, #tray, button {
 }
 
 #clock {
-    border-color: @mauve;
-    color: @mauve;   
+    border-color: @accent;
+    color: @accent;   
 }
 
 #network.disabled, #network.disconnected {
@@ -128,8 +128,8 @@ widget > label, #tray, button {
 
 
 #backlight, #tray {
-    border-color: @mauve;
-    color: @mauve;      
+    border-color: @accent;
+    color: @accent;      
 }
 
 #custom-squeekboard, #custom-squeekboard.disabled {

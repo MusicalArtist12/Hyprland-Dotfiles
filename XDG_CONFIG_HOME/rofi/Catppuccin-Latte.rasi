@@ -14,7 +14,7 @@
     rosewater: #dc8a78;
     flamingo: #dd7878;
     pink: #ea76cb;
-    mauve-bk: #8839ef;
+    mauve: #8839ef;
     red: #d20f39;
     maroon: #e64553;
     peach: #fe640b;
@@ -25,5 +25,6 @@
     sapphire: #209fb5;
     blue: #1e66f5;
     lavender: #7287fd;
-    mauve: #7287fd;
+
+    accent: lavender;
 }

@@ -1,8 +1,7 @@
 @define-color rosewater #dc8a78;
 @define-color flamingo #dd7878;
 @define-color pink #ea76cb;
-@define-color mauve_bk #8839ef;
-@define-color mauve #7287fd;
+@define-color mauve #8839ef;
 @define-color red #d20f39;
 @define-color maroon #e64553;
 @define-color peach #fe640b;
@@ -25,3 +24,5 @@
 @define-color base #eff1f5;
 @define-color mantle #e6e9ef;
 @define-color crust #dce0e8;
+
+@define-color accent lavender;

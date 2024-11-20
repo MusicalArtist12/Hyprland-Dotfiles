@@ -11,5 +11,5 @@ RATE = 4096
 
 random = int(random() * RATE)
 
-os.system("pokemon-colorscripts -n {r} chikorita --no-title".format(r = "-s" if random == 0 else ""))
+os.system("pokemon-colorscripts -n {r} {n} --no-title".format(r = "-s" if random == 0 else "", n = sys.argv[1]))
 
