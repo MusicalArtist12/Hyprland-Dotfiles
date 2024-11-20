@@ -18,7 +18,7 @@ configuration {
 window {
     background-color: @mantle;
     border: 2px;
-    border-color: @mauve;
+    border-color: @accent;
 }
 
 inputbar {
@@ -53,7 +53,7 @@ element-text {
 }
 
 element selected {
-    background-color: @mauve;
+    background-color: @accent;
     text-color: @base;
 }
 
