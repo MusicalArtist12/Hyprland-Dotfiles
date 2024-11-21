@@ -25,4 +25,4 @@
 @define-color mantle #181825;
 @define-color crust #11111b;
 
-@define-color accent mauve;
+@define-color accent @mauve;

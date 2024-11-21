@@ -100,4 +100,4 @@ alias copy='wl-copy'
 alias paste='wl-paste'
 alias rm="rm -i"
 
-chikorita-encounter.py 
+pokemon-encounter.py trubbish

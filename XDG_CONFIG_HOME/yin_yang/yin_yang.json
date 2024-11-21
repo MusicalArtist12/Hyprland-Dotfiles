@@ -72,8 +72,8 @@
         },
         "custom": {
             "enabled": true,
-            "light_theme": "~/.local/bin/light_mode.sh",
-            "dark_theme": "~/.local/bin/dark_mode.sh"
+            "light_theme": "~/.local/bin/light-mode.sh",
+            "dark_theme": "~/.local/bin/dark-mode.sh"
         },
         "notification": {
             "enabled": false,

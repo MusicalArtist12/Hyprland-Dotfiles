@@ -25,4 +25,4 @@
 @define-color mantle #e6e9ef;
 @define-color crust #dce0e8;
 
-@define-color accent lavender;
+@define-color accent @lavender;
