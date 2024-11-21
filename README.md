@@ -70,7 +70,7 @@ make sure `$HOME/.local/bin` is in `$PATH`.
 ![](/Screenshots/screenshot6-light.png)
 
 # PATH
-I put these in ~/.local/bin, but to use this directory (you may need to make it)
+The makefile puts these in .local/bin.
 
 - `battery-notify.py` and `media-notify.py` are both OSDs written in python and use mako.
 - `pokemon-encounter.py` is used by zshrc - random chance of getting a shiny chickorita
