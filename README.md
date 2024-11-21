@@ -1,10 +1,13 @@
 Collection of a few things I use to decorate my system. I make no promises that any of this will work for you.
 
+# WARNING
+the included makefile will overwrite any files with the same name. I am not responsible for any lost files
+
 # Notes
 make sure `$HOME/.local/bin` is in `$PATH`.
 - add `append_path $HOME'/.local/bin'` to `/etc/profile` next to the rest of the `append_path`'s to make this a global change on your machine.
 
-# Requirements (In Some Way)
+# Requirements (Non-Exhaustive)
 - Bat
 - BetterDiscord (And Discord)
 - Catppuccin Mocha Mauve and Catppuccin Latte Lavender GTK and Cursor Themes
@@ -46,8 +49,6 @@ make sure `$HOME/.local/bin` is in `$PATH`.
 - Zsh, oh-my-zsh 
     - zsh-autosuggestions
     - zsh-syntax-highlighting
-
-# Recomendations
 - nwg-displays
 - fastfetch
 - Cava
@@ -67,3 +68,12 @@ make sure `$HOME/.local/bin` is in `$PATH`.
 ![](/Screenshots/screenshot4-light.png)
 ![](/Screenshots/screenshot5-light.png)
 ![](/Screenshots/screenshot6-light.png)
+
+# PATH
+I put these in ~/.local/bin, but to use this directory (you may need to make it)
+
+- `battery-notify.py` and `media-notify.py` are both OSDs written in python and use mako.
+- `pokemon-encounter.py` is used by zshrc - random chance of getting a shiny chickorita
+- `dark-mode.py` and `light-mode.py` are both yin-yang scripts
+- `hyprpicker-extended.sh` is a wrapper for hyprpicker that produces a notification and copies the hex code to clipboard
+
