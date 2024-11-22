@@ -2,7 +2,7 @@
 Name=Restart
 Comment=systemd
 Exec=systemctl reboot
-Icon=
+Icon=system-reboot
 Type=Application
-Categories=System
+Categories=System;Session
 Path=/usr/bin

@@ -2,7 +2,7 @@
 Name=Shutdown
 Comment=systemd
 Exec=systemctl poweroff
-Icon=
+Icon=system-shutdown
 Type=Application
-Categories=System
+Categories=System;Session
 Path=/usr/bin

@@ -2,6 +2,6 @@
 Name=Exit Hyprland
 Comment=hyprctl dispatch exit
 Exec=hyprctl dispatch exit
-Icon=
+Icon=system-log-out
 Type=Application
-Categories=System
+Categories=System;Session

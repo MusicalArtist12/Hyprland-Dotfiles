@@ -112,6 +112,11 @@
         "return-type": "json",
         "on-click": "pkill -USR1 -u julia -f \"idle-inhibitor.py\"",
         "exec": "/home/julia/.local/bin/idle-inhibitor.py"  
+    },
+    
+    "custom/hyprspace": {
+        "format": "󰍜",
+        "on-click": "sleep 0.2; hyprctl dispatch overview:toggle"
     }
 }
 

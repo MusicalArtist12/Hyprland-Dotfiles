@@ -2,7 +2,7 @@
 Name=Lock
 Comment=
 Exec=loginctl lock-session
-Icon=
+Icon=system-lock-screen
 Type=Application
-Categories=System
+Categories=System;Session
 Path=/usr/bin
