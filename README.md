@@ -31,7 +31,7 @@ make sure `$HOME/.local/bin` is in `$PATH`.
 - libnotify
 - mako
 - mpvpaper - for the gif background
-- nm-applet
+- network-manager-applet
 - nwg-hello
 - nwg-look
 - Pokemon-Colorscripts
