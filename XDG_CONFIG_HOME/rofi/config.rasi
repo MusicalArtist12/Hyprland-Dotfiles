@@ -3,7 +3,7 @@ configuration {
     combi-display-format: "{mode}&#09;{text}";
     drun-display-format: "&#09;{name}";
     window-format: "{w}&#09;{t}";
-    modes: "combi,window,drun,clipboard:~/.config/rofi/scripts/clipboard.sh,google:~/.config/rofi/scripts/search.sh,emoji:rofimoji";
+    modes: "combi,window,drun,clipboard:~/.config/rofi/scripts/clipboard.sh";
 }
 
 @theme "theme"
