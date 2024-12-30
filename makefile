@@ -52,6 +52,7 @@ greeter: hyprland
 	sudo pacman -S --needed greetd nwg-hello
 	sudo cp -r ROOT/etc/greetd /etc/
 	sudo cp -r ROOT/etc/nwg-hello /etc/
+	sudo systemctl enable greetd
 
 applications:
 	sudo pacman -S --needed kitty network-manager-applet pamixer pavucontrol thunar firefox ranger fastfetch
