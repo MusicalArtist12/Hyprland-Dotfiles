@@ -17,7 +17,7 @@ make sure `$HOME/.local/bin` is in `$PATH`.
 - greetd
 - Gsettings
 - hypridle
-- Hyprland-git
+- Hyprland
 - hyprlock
 - hyprpaper
 - Hyprpicker
@@ -25,7 +25,7 @@ make sure `$HOME/.local/bin` is in `$PATH`.
 - Hyprspace
 - iio-Hyprland
 - ImageMagick
-- Jetbrains Mono NerdFont
+- ttf-jetbrains-mono-nerd
 - kitty
 - Kvantum
 - libnotify
@@ -35,13 +35,11 @@ make sure `$HOME/.local/bin` is in `$PATH`.
 - nwg-hello
 - nwg-look
 - Pokemon-Colorscripts
-- Polkit-gnome
+- polkit-gnome
 - pamixer
 - pavucontrol
-- python
-- Ranger
+- ranger
 - rofi
-- Spicetify and Spotify
 - waybar
 - wl-clipboard
 - xdg-desktop-portal-hyprland
@@ -51,7 +49,7 @@ make sure `$HOME/.local/bin` is in `$PATH`.
     - zsh-syntax-highlighting
 - nwg-displays
 - fastfetch
-- Cava
+- cava
 
 # Screenshots
 
