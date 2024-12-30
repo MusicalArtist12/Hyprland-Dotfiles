@@ -58,7 +58,7 @@ applications:
 	sudo pacman -S --needed kitty network-manager-applet pamixer pavucontrol thunar firefox ranger fastfetch
 	cp -r XDG_CONFIG_HOME/kitty $(XDG_CONFIG_HOME)/
 	cp -r XDG_CONFIG_HOME/fastfetch $(XDG_CONFIG_HOME)/
-	cp -r XDG_CONFIG_HOME/thunar $(XDG_CONFIG_HOME)/
+	cp -r XDG_CONFIG_HOME/Thunar $(XDG_CONFIG_HOME)/
 	cp XDG_CONFIG_HOME/code-flags.conf $(XDG_CONFIG_HOME)/
 	cp XDG_CONFIG_HOME/spotify-launcher.conf $(XDG_CONFIG_HOME)/
 
