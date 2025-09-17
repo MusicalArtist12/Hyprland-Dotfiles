@@ -1,0 +1,59 @@
+(deflisten hyprland_workspace_info :initial "{}"
+  `python ~/.config/eww/hyprland_listener.py`)
+; this loop will only update elements if the volume changes!
+
+(deflisten vol :initial 0
+ `initial=0
+  while [[ 1 == 1 ]]
+  do
+    current=$(pamixer --get-volume)
+    if [[ $initial != $current ]]
+    then
+      echo $current
+      initial=$current
+    fi
+  done`)
+
+(deflisten muted :initial false
+  `initial=0
+  while [[ 1 == 1 ]]
+  do
+    current=$(pamixer --get-mute)
+    if [[ $initial != $current ]]
+    then
+      echo $current
+      initial=$current
+    fi
+  done`)
+
+(defvar audio-onscroll
+  "if [[ {} == 'down' ]]
+      then
+        pamixer -d 5
+      else
+        pamixer -i 5
+      fi
+    pkill -USR1 -u julia -f \"media-notify.py\"")
+
+
+(defvar default-spacing 5)
+
+
+(defwidget workspaces [display_name, spacing, orientation, size]
+  (box :orientation  orientation
+       :valign       {orientation == "vertical" ? "start" : "fill"}
+       :halign       {orientation == "horizontal" ? "start" : "fill"}
+       :space-evenly false
+       :spacing      spacing
+    (for entry in { hyprland_workspace_info['workspaces'][display_name] }
+      (button :class   { entry == hyprland_workspace_info['active_workspace'] ? "workspace-button active" : "workspace-button" }
+              :onclick "hyprctl dispatch workspace ${entry}"
+              :width   size
+              :height  size
+        (label :text entry) ))
+    (for entry in { hyprland_workspace_info['special_workspaces']}
+      (button :class   { entry == hyprland_workspace_info['active_special'][display_name] ? "workspace-button active special" : "workspace-button special" }
+              :onclick "hyprctl dispatch togglespecialworkspace ${replace(entry, 'special:', '')}"
+              :width   size
+              :height  size
+              (label :text {entry == "special:Discord" ? "" : entry}) ))))
